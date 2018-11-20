@@ -1,0 +1,34 @@
+[user]
+[color]
+    diff = auto
+    ui = true
+[diff]
+    #tool = diffuse
+    tool = diffuse
+
+    #tool = kompare
+    #tool = meld
+[difftool]
+    prompt = TRUE
+[merge]
+    tool = kdiff3
+[alias]
+    s = status -uno
+    diffx = difftool
+    l = log --oneline --graph --decorate
+    ll = log --stat --graph --decorate
+    b = branch
+    bb = branch -avv
+    m = merge --no-ff --no-commit
+    lg  = log --graph --pretty=format:'%C(yellow bold)%h%Creset (%ad) %C(bold)%an:%Creset %s %Cgreen%d%Creset' --date=relative
+    bit = log --graph --pretty=format:'%C(yellow bold)%h%Creset (%ad) %C(bold)%an:%Creset %s %Cgreen%d%Creset' --date=relative -15
+
+[core]
+    editor = vim
+[push]
+	default = current
+[pull]
+    default = current
+[mergetool "kdiff3"]
+    trustExitCode = false
+    cmd = kdiff3 --qall $BASE $LOCAL $REMOTE -o $MERGED

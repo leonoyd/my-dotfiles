@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/leo/Downloads/pycharm-2018.2.3/index'
+let g:netrw_dirhist_2='/opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.0.1/ide/readme'
+let g:netrw_dirhist_3='/home/leo/accutron/gastrax_probe/Src'
+let g:netrw_dirhist_4='/home/leo/.vim'
+let g:netrw_dirhist_5='/home/leo/.vim/bundle'
+let g:netrw_dirhist_6='/home/leo/.vim/bundle/editorconfig-vim'
+let g:netrw_dirhist_7='/home/leo/.vim/bundle'
