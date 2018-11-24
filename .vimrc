@@ -31,9 +31,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'joshdick/onedark.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'morhetz/gruvbox'
 Plugin 'ervandew/supertab'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -64,5 +61,12 @@ map s 5j
 map S 5
 map a A
 map F g#
-let g:molokai_original = 1
+
+:nnoremap gr :grep -R --include=*.{c,h,cpp,hpp} <cword> *<CR>
+:nnoremap Gr :grep -R --include=*.{c,h,cpp,hpp} <cword> %:p:h/*<CR>
+:nnoremap gR :grep -R --include=*.{c,h,cpp,hpp} '\b<cword>\b' *<CR>
+:nnoremap GR :grep -R --include=*.{c,h,cpp,hpp} '\b<cword>\b' %:p:h/*<CR>
+
+set tags=./tags;
+"let g:molokai_original = 1"
 colorscheme onedark 
